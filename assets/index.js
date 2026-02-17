@@ -130,11 +130,14 @@ function isEmpty(value){
 }
 
 function forwardToId(params){
-    // Względna ścieżka do id.html, kompatybilna z GitHub Pages
+    // Względna ścieżka do pliku id.html w repozytorium
     location.href = "id.html?" + params;
+}
+
 }
 
 var guide = document.querySelector(".guide_holder");
 guide.addEventListener('click', () => {
     guide.classList.toggle("unfolded");
 });
+
